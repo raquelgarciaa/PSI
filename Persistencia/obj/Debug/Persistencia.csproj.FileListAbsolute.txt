@@ -1,0 +1,16 @@
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.csprojAssemblyReference.cache
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\Persistencia.dll.config
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\EntityFramework.dll
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\Modelo.dll
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\Modelo.pdb
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\EntityFramework.xml
+C:\Users\Raquel\source\repos\Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.csproj.CopyComplete
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.Migrations.InitialCreate.resources
+C:\Users\Raquel\source\repos\Persistencia\obj\Debug\Persistencia.csproj.GenerateResource.cache

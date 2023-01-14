@@ -1,0 +1,60 @@
+﻿@model estudos.Models.Home
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Index - destaque e 30 dias atrás</h1>
+<br />
+<h2>Listados em destaque</h2>
+<div style="display: flex;">
+    @foreach (var item in Model.Lista_destaque)
+    {
+        @Html.HiddenFor(model => item.ProdutoId)
+        @Html.HiddenFor(model => item.LogotipoMimeType)
+        @Html.HiddenFor(model => item.Logotipo)
+        @Html.HiddenFor(model => item.NomeArquivo)
+        @Html.HiddenFor(model => item.TamanhoArquivo)
+
+        <div style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid black;">
+            <img class="img-thumbnail"
+                 src="@Url.Action("GetLogotipo2", "Produtos", new { id = item.ProdutoId })"
+                 style="display:block; margin-left:auto; margin-right:auto; width: 300px; height:300px;" />
+            <h3>@Html.DisplayFor(modelItem => item.ProdutoId)</h3>
+            <h3>@Html.DisplayFor(modelItem => item.Categoria.Nome)</h3>
+            <h3>@Html.DisplayFor(modelItem => item.Fabricante.Nome)</h3>
+            <h3>@Html.DisplayFor(modelItem => item.Nome)</h3>
+            <h3>@Html.DisplayFor(modelItem => item.DataCadastro)</h3>
+            <h3>@Html.DisplayFor(modelItem => item.Destaque)</h3>
+        </div>
+
+    }
+    </div>
+
+    <h2>Listados nos últimos 30 dias - entre 09/12 e 09/11</h2>
+    <br />
+    <div style="display: flex; justify-content:space-between; flex-wrap: wrap;">
+        @foreach (var item in Model.Lista_tempo)
+        {
+            @Html.HiddenFor(model => item.ProdutoId)
+            @Html.HiddenFor(model => item.LogotipoMimeType)
+            @Html.HiddenFor(model => item.Logotipo)
+            @Html.HiddenFor(model => item.NomeArquivo)
+            @Html.HiddenFor(model => item.TamanhoArquivo)
+
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid black;">
+                    <img class="img-thumbnail"
+                         src="@Url.Action("GetLogotipo2", "Produtos", new { id = item.ProdutoId })"
+                         style="display:block; margin-left:auto; margin-right:auto; width: 300px; height:300px;" />
+                    <h3>@Html.DisplayFor(modelItem => item.ProdutoId)</h3>
+                    <h3>@Html.DisplayFor(modelItem => item.Categoria.Nome)</h3>
+                    <h3>@Html.DisplayFor(modelItem => item.Fabricante.Nome)</h3>
+                    <h3>@Html.DisplayFor(modelItem => item.Nome)</h3>
+                    <h3>@Html.DisplayFor(modelItem => item.DataCadastro)</h3>
+                    <h3>@Html.DisplayFor(modelItem => item.Destaque)</h3>
+                </div>
+
+                }
+            </div>
+
